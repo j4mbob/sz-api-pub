@@ -1,0 +1,15 @@
+{
+  "name": "isolation",
+  "description": "isolation whitelist",
+  "whitelist": [
+    {
+      "mac": "00:DD:FF:EE:DD:EE",
+      "description": ""
+    },
+    {
+      "mac": "00:DD:FF:EE:DD:EF",
+      "description": ""
+    }
+  ],
+  "clientIsolationAutoEnabled": false
+}

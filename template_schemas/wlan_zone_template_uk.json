@@ -1,0 +1,142 @@
+{
+    "domainId": "adc73876-e3b0-419e-a490-47f0cfff77fa",
+    "name": "TEST_SITE_UK2",
+    "description": "",
+    "countryCode": "GB",
+    "version": "5.2.2.0.301",
+    "timezone": {
+        "systemTimezone": "GMT"
+    },
+    "login": {
+        "apLoginName": "admin",
+        "apLoginPassword": "*dfgfdg"
+    },
+    "dfsChannelEnabled": false,
+    "wifi24": {
+        "txPower": "-10dB",
+        "channelWidth": 20,
+        "channel": 0,   
+        "channelRange": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+        ]
+    },
+    "wifi50": {
+        "txPower": "-4dB",
+        "channelWidth": 40,
+        "indoorChannel": 0,
+        "outdoorChannel": 0,
+        "indoorChannelRange": [
+            100,
+            104,
+            108,
+            112,
+            116,
+            132,
+            136
+        ],
+        "outdoorChannelRange": [
+            100,
+            104,
+            108,
+            112,
+            116,
+            132,
+            136
+        ]
+    },
+    "protectionMode24": "RTS_CTS",
+    "channelModeEnabled": true,
+    "tunnelType": "RuckusGRE",
+    "tunnelProfile": {
+        "id": "77a20d60-43bf-494c-a6ff-daae10aebce4",
+        "name": "Default Tunnel Profile"
+    },
+    "ruckusGreTunnelProfile": {
+        "id": "77a20d60-43bf-494c-a6ff-daae10aebce4",
+        "name": "Default Tunnel Profile"
+    },
+    "backgroundScanning24": {
+        "frequencyInSec": 600
+    },
+    "backgroundScanning50": {
+        "frequencyInSec": 600
+    },
+    "loadBalancing": {
+        "loadBalancingMethod": "BASED_ON_CLIENT_COUNT",
+        "bandBalancing": {
+            "wifi24Percentage": 25
+        },
+        "steeringMode": "BASIC"
+    },
+    "locationBasedService": null,
+    "apRebootTimeout": {
+        "gatewayLossTimeoutInSec": 3600,
+        "serverLossTimeoutInSec": 0
+    },
+    "location": "",
+    "vlanOverlappingEnabled": false,
+    "nodeAffinityProfile": null,
+    "enforcePriorityZoneAffinityEnable": false,
+    "venueProfile": null,
+    "ipsecProfile": null,
+    "bonjourFencingPolicyEnabled": false,
+    "bonjourFencingPolicy": null,
+    "autoChannelSelection24": {
+        "channelSelectMode": "ChannelFly",
+        "channelFlyMtbc": 1440
+    },
+    "autoChannelSelection50": {
+        "channelSelectMode": "ChannelFly",
+        "channelFlyMtbc": 1440
+    },
+    "channelEvaluationInterval": 600,
+    "apMgmtVlan": {
+        "id": 2,
+        "mode": "USER_DEFINED"
+    },
+    "apLatencyInterval": {
+        "pingEnabled": true
+    },
+    "recoverySsid": {
+        "recoverySsidEnabled": true
+    },
+    "dosBarringEnable": 0,
+    "dosBarringPeriod": 60,
+    "dosBarringThreshold": 5,
+    "dosBarringCheckPeriod": 30,
+    "snmpAgent": {
+        "apSnmpEnabled": false,
+        "snmpV2Agent": [],
+        "snmpV3Agent": []
+    },
+    "clusterRedundancyEnabled": false,
+    "rogueApReportThreshold": 0,
+    "rogueApAggressivenessMode": 0,
+    "rogueApJammingDetection": false,
+    "rogueApJammingThreshold": 50,
+    "directedMulticastFromWiredClientEnabled": false,
+    "directedMulticastFromWirelessClientEnabled": false,
+    "directedMulticastFromNetworkEnabled": false,
+    "healthCheckSitesEnabled": false,
+    "healthCheckSites": [
+        "www.google.com:443",
+        "www.live.com:443",
+        "www.github.com:443",
+        "source.codeaurora.org:443",
+        "www.wikipedia.com:443"
+    ],
+    "sshTunnelEncryption": "AES256",
+    "apHccdEnabled": true,
+    "apHccdPersist": true,
+    "rksGreForwardBroadcast": false
+}

@@ -1,0 +1,173 @@
+{
+  "name": "wlanName",
+  "ssid": "wlanSSID",
+  "description": "wlanDescription",
+  "accessIpsecProfile": null,
+  "encryption": {
+    "method": "None",
+    "algorithm": "AES",
+    "passphrase": "",
+    "mfp": "disabled",
+    "support80211rEnabled": false,
+    "mobilityDomainId": 1
+  },
+  "authServiceOrProfile": {
+        "id": "36e88edf-b4da-496e-9d5d-c3497d891651",
+        "name": "RADIUS",
+        "throughController": false,
+        "realmBasedAuth": false,
+        "authenticationOption": null
+    },
+  "operatorRealm": "operator realm",
+  "firewallProfileId": "none",
+  "firewallWlanSpecificEnabled": false,
+  "vlan": {
+    "accessVlan": 1,
+    "coreQinQEnabled": false,
+    "vlanPooling": null
+  },
+  "radiusOptions": {
+    "nasIdType": "WLAN_BSSID",
+    "nasRequestTimeoutSec": 12,
+    "nasMaxRetry": 3,
+    "nasReconnectPrimaryMin": 30,
+    "calledStaIdType": "WLAN_BSSID",
+    "nasIpType": "disabled",
+    "nasIpUserDefined": "192.168.1.1"
+  },
+  "advancedOptions": {
+    "clientIsolationEnabled": true,
+    "clientIsolationUnicastEnabled": true,
+    "clientIsolationMulticastEnabled": true,
+    "clientIsolationAutoVrrpEnabled": false,
+    "clientIsolationWhitelist": {
+      "id": "b89323e1-3168-11e7-b027-5254009ae3f0",
+      "name": "myWhitelist"
+    },
+    "priority": "High",
+    "hideSsidEnabled": false,
+    "maxClientsPerRadio": 100,
+    "clientIdleTimeoutSec": 60,
+    "clientLoadBalancingEnabled": true,
+    "proxyARPEnabled": false,
+    "ndProxyEnabled": false,
+    "suppressNsEnabled": false,
+    "raProxyEnabled": false,
+    "rsraGuardEnabled": false,
+    "raThrottlingEnabled": false,
+    "maxAllowedRA": 10,
+    "raInterval": 10,
+    "support80211dEnabled": true,
+    "support80211kEnabled": true,
+    "antiSpoofingEnabled": false,
+    "arpRequestRateLimit": 0,
+    "dhcpRequestRateLimit": 0,
+    "forceClientDHCPTimeoutSec": 0,
+    "dhcp82SubOpt1Format": "SUBOPT1_AP_INFO",
+    "dhcp82MacFormat": "COLON",
+    "unauthClientStatsEnabled": false,
+    "clientFingerprintingEnabled": true,
+    "multicastFilterDrop": false,
+    "ofdmOnlyEnabled": true,
+    "bandBalancing": "UseZoneSetting",
+    "bssMinRateMbps": "Disable",
+    "mgmtTxRateMbps": "6 mbps",
+    "avcEnabled": true,
+    "uplinkEnabled": false,
+    "uplinkRate": 0,
+    "downlinkEnabled": false,
+    "downlinkRate": 0,
+    "multicastUplinkRateLimitEnabled": false,
+    "multicastUplinkRateLimit": 1,
+    "multicastDownlinkRateLimitEnabled": false,
+    "multicastDownlinkRateLimit": 1,
+    "ratePerSTAUplink": "",
+    "ratePerSTADownlink": "",
+    "hdOverheadOptimizeEnable": false,
+    "probeRssiThr": null,
+    "transientClientMgmtEnable": false,
+    "joinIgnoreTimeout": 30,
+    "joinAcceptTimeout": 300,
+    "joinIgnoreThr": 10,
+    "dropRandomProbesEnabled": false,
+    "authRssiThr": -85,
+    "assocRssiThr": -85
+  },
+"qosMaps": [
+    {
+      "enable": true,
+      "priority": 0,
+      "low": 0,
+      "high": 7,
+      "excepts": null
+    },
+    {
+      "enable": true,
+      "priority": 1,
+      "low": 8,
+      "high": 15,
+      "excepts": null
+    },
+    {
+      "enable": true,
+      "priority": 2,
+      "low": 16,
+      "high": 23,
+      "excepts": null
+    },
+    {
+      "enable": true,
+      "priority": 3,
+      "low": 0,
+      "high": 32,
+      "excepts": [
+        43,
+        45,
+        60
+      ]
+    },
+    {
+      "enable": true,
+      "priority": 4,
+      "low": 32,
+      "high": 39,
+      "excepts": null
+    },
+    {
+      "enable": true,
+      "priority": 5,
+      "low": 40,
+      "high": 47,
+      "excepts": null
+    },
+    {
+      "enable": true,
+      "priority": 6,
+      "low": 48,
+      "high": 55,
+      "excepts": [
+        46
+      ]
+    },
+    {
+      "enable": true,
+      "priority": 7,
+      "low": 56,
+      "high": 63,
+      "excepts": null
+    }
+  ],
+  "dpsk": {
+    "dpskEnabled": false,
+    "length": 8,
+    "dpskType": "Secure",
+    "expiration": "OneDay",
+    "dpskFromType": "FirstUse"
+  },
+  "externalDpsk": {
+    "enabled": false,
+    "encryption": {
+      "method": "None"
+    }
+  }
+}
