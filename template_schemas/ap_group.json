@@ -1,0 +1,10 @@
+{
+      "name": "apgroupname",
+    "description": "apgroup desc",
+    "wifi24": {
+        "txPower": "-10dB"
+    },
+    "wifi50": {
+        "txPower": "-6dB(1/4)"
+    }
+}
